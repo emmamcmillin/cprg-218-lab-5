@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.search{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.news-list li{
+  background-color: rgb(234, 234, 234);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-inline: auto;
+  
+  text-align:center;
+  border-radius: 10px;
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  padding: 25px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 0.95rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  width: 24rem;
+}
+
+
+input[type=text]{
+  border-radius: 25px;
+  width: 80%;
+  max-width: 900px;
+  height: 40px;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif;
+  margin: 15px auto;
+  padding-left: 20px;
+}
+
+input[type=submit]{
+  border-radius: 30px;
+  width: 130px;
+  height: 40px;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif;
+  margin: 15px;
+}
+
+input[type=submit]:hover{
+  background-color: rgb(205, 205, 205);
+} 
+
+.option-2-enhanced img{
+  margin: -25px auto 20px -25px;
+  border-bottom: 0.35rem solid rgb(32, 58, 136);
+  border-radius: 0.95rem 0.95rem 0 0;
+  height: 200px;
+  width: 24rem;
+  filter: brightness(70%);
+}
+
+.option-2-enhanced img:hover{
+  filter:brightness(100%)
+}
+

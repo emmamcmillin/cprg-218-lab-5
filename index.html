@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/assignment_two.css">
+  <link rel="stylesheet" type="text/css" href="styles/apistyles.css">
+  <script src="https://kit.fontawesome.com/fce00e3d48.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <title>Holiday Home Website</title>
+</head>
+<body>
+  
+  <section class="hero-container">
+    <!-- Remove and add hero banner HTML -->
+    <div class="hero-image" >
+      <img class="dream-vista" src="assets/tropical_resort.jpg" alt="woman in bikini lounging by pool at a tropical resort">
+      <div class="hero-text">
+        <h1>Welcome To Dream Vista</h1>
+        <p>Vacation Home Rentals</p>
+        <script>
+          function showAlert() {
+            alert ("There are no available properties at the moment thank-you for your patience.");
+          }
+        </script>
+        <button class="search-properties" onclick="showAlert()">Search Properties</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content-container">
+    <!-- Remove and add content HTML -->
+    <div>
+      <ul class="content-items">
+        <li class="content-text">
+          <h1>Explore The World</h1>
+          <p>Unearth the distinctive charms and exceptional amenities that make each property a sanctuary of indulgence, whether it's the panoramic vistas that greet you every morning or the sumptuous interiors that cocoon you in comfort. Immerse yourself in the vibrant tapestry of local culture and flavor, as we guide you through nearby attractions, culinary delights, and off-the-beaten-path treasures waiting to be discovered. Customize your escape to perfection, tailoring every moment to your desires and preferences, be it a leisurely stroll through historic streets or an adrenaline-fueled adventure in the great outdoors. Gain exclusive insights and recommendations from seasoned travelers and locals alike, ensuring that every activity and excursion is crafted to create unforgettable memories. With our exhaustive array of resources and expert guidance, crafting your dream vacation becomes an effortless journey, promising experiences that transcend the ordinary and endure in your heart forever.
+          </p>
+          <script>
+            function showAlert2() {
+              alert ("https://www.youtube.com/watch?v=S7TUe5w6RHo&t");
+            }
+          </script>
+          <button class="learn-more" onclick="showAlert2()">Learn More</button>
+        </li>
+        <li>
+          <img class="content-image" src="assets/travelling_couple.jpg" alt="backpacking couple sitting will watching a mountain-side sunset">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="accordion-container">
+    <!-- Remove and add accordion HTML -->
+    <div>
+      <h1>Client Reviews</h1>
+      <button class="accordion">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i> 
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        - Jane Doe</button>
+      <div class="panel">
+        <p>"Our stay was magical! Breathtaking views, and thoughtful recommendations made our vacation unforgettable."</p>
+      </div>
+
+      <button class="accordion">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i> 
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i> 
+        - John Doe</button>
+      <div class="panel">
+        <p>"Fantastic getaway! Modern amenities, and excellent recommendations for activities ensured a perfect retreat."</p>
+      </div>
+
+      <button class="accordion">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i> 
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i> 
+        - Kane Doe</button>
+      <div class="panel">
+        <p>"Amazing time! attention to details, and endless adventures made for cherished memories."</p>
+      </div>
+      
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+    </div>
+  </section>
+
+  <section class="option-2-enhanced">
+    <form class="search" action="">
+      <input class="input" type="text"/>
+      <input type="submit"/>
+    </form>
+
+    <div class="news-container">
+      <ul class="news-list"></ul>
+    </div>
+
+  </section>
+
+  <!-- card stuff -->
+  <h1 class="card-title">Our Vacation Home Gems</h1>
+  <section class="container">
+    <ul class="card-container">
+      <li class="card">
+        <img class="card-image" src="assets/beach_house.jpg" alt="white beach house">
+        <div class="card-content">
+          <h3 class="subheader">
+            Beach-Side Lounge
+          </h3>
+          <h4 class="header">
+            Vietnam 
+          </h4>
+          <p class="paragraph">
+            Experience the fresh sea breeze with white sand beaches at your doorstep.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img class="card-image" src="assets/mountain_house.jpg" alt="mountain-side wooden cabin">
+        <div class="card-content">
+          <h3 class="subheader">
+            Secluded Mountain Cottage
+          </h3>
+          <h4 class="header">
+            Sweden
+          </h4>
+          <p class="paragraph">
+            Get away from lifes troubles at this quiet mountain cabin with a beautiful view.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img class="card-image" src="assets/castle_house.jpg" alt="old mansion estate with hedges and fountain">
+        <div class="card-content">
+          <h3 class="subheader">
+            Sprawling Victorian Estate
+          </h3>
+          <h4 class="header">
+            United Kingdom
+          </h4>
+          <p class="paragraph">
+            Feel like royalty at this victorian estate with its sprawling hedge gardens and mild climate.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="video-container">
+    <iframe class="video"
+    src="https://www.youtube.com/embed/4ensV8QkFKk" alt="10 Most UNIQUE AirBnbs In The World You Can Visit NOW">
+    </iframe>
+  </section>
+
+  <section class="footer-container">
+    <!-- Remove and add footer HTML -->
+    <div>
+      <footer>
+        <ul class="footer-items">
+          <li>
+            <h2 class="footer-header">Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              <br>adipiscing elit. Sed posuere nibh sit amet
+              <br> feugiat porta. Pellentesque vel ornare
+              <br> purus, eu mollis sapien. Curabitur rutrum
+              <br> eget ante in mattis. Nullam non fermentum
+              <br> metus. Proin erat eros, semper ut neque
+              <br> a, tristique vestibulum nunc.
+            </p>
+          </li>
+          <li>
+            <h2 class="footer-header">Links</h2>
+            <p><a href="mailto:hege@example.com">Privacy Policy</a></p>
+            <p><a href="mailto:hege@example.com">Terms of use</a></p>
+            <p><a href="mailto:hege@example.com">Accessibility</a></p>
+            
+          </li>
+          <li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10027.407107597623!2d-114.08059347687765!3d51.07428618068391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371656f62a13061%3A0xb7bc686ec800ac9e!2sTuxedo%20Park%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1711153632881!5m2!1sen!2sca" width="300" height="250" frameborder="0"style="border:0" allowfullscreen></iframe>
+            <p>Company location</p>
+          </li>
+          
+          <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script>, Southern Alberta Institute of Technology</p>
+        </ul>
+      </footer>
+    </div>
+  </section>
+  <script src="scripts.js" defer></script>
+</body>
+</html>
