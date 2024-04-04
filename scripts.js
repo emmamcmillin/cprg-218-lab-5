@@ -43,7 +43,7 @@ function retrieve(e){
         li.appendChild(a);
         newsList.appendChild(li);
       });
-      
+
     } else {
       console.error("Articles data is not available or not an array.");
     }
@@ -51,6 +51,7 @@ function retrieve(e){
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+}
 
 
 
