@@ -30,20 +30,20 @@ function retrieve(e){
     console.log(data)
     if (data.articles && Array.isArray(data.articles)) {
       data.articles.forEach((article) => {
-        data.articles.forEach(article =>{
-          let li = document.createElement('li');
-          let a = document.createElement('a');
-          let img = document.createElement('img'); // Create img element
-          a.setAttribute('href', article.url);
-          a.setAttribute('target', '_blank');
-          a.textContent = article.title;
-          img.src = article.urlToImage; // Set src attribute of img to article's image URL
-          img.alt = article.title; // Set alt attribute of img to article's title
-          li.appendChild(img); // Append img to li
-          li.appendChild(a);
-          newsList.appendChild(li);
-        })
+        
+        let li = document.createElement('li');
+        let a = document.createElement('a');
+        let img = document.createElement('img'); // Create img element
+        a.setAttribute('href', article.url);
+        a.setAttribute('target', '_blank');
+        a.textContent = article.title;
+        img.src = article.urlToImage; // Set src attribute of img to article's image URL
+        img.alt = article.title; // Set alt attribute of img to article's title
+        li.appendChild(img); // Append img to li
+        li.appendChild(a);
+        newsList.appendChild(li);
       });
+      
     } else {
       console.error("Articles data is not available or not an array.");
     }
